@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class Problem3MysteryBinary {
+
+    ArrayList<Integer> list1 = new ArrayList<>();
+    ArrayList<Integer> list2 = new ArrayList<>();    
+    int count = 0;
+    
+    public static void main(String[] args) {
+	
+	list1.add( Integer.parseInt(args[0]));
+	
+	for( int i = 0; i < 5 ; i++) {
+	    for(int j = 0; j < list1.size() ; j++) {
+		
+		if ( j+1 > list.size() )
+		    workWith( j );
+				    
+		else if ( list1.get(j).intValue() == list1.get(j+1).intValue() ) 
+		    count++;
+	      
+	        else 
+		    workWith ( j );		    		    
+	
+	    }//end inner for	    
+	    System.out.println();
+	}//end outer for  
+    }//end main
+
+    void workWith( int numberAtLastIndex ) {
+	count++; 
+	list2.add(count);
+	list2.add( list1.get(numberAtLastIndex) );
+	//reset count and lists
+	count = 0;
+	list1 = new ArrayList<>( list2 );
+	list2.clear();
+	//output to the row
+        System.out.print(count);
+	System.out.print(  list1.get(numberAtLastIndex) );
+    }
+}
