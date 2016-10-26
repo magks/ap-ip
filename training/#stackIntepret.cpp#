@@ -1,0 +1,35 @@
+#include <stack>
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  stack<int> s;
+  char input;
+
+  while(cin>>input) {
+
+    if (input == 'P') {
+      int num;
+      cin>>num;
+      s.push(num);
+    }
+    else if (input == 'A') {
+      int b = s.top();
+      s.pop();
+      int a = s.top();
+      s.pop();
+      s.push(a+b);
+    }
+    else if (input == 'S') {
+      
+    }
+    else if (input == 'M') {
+    }
+    else if (input == 'D') {
+    }
+    else if (intput == 'R') {
+    }
+  }
+    
+}

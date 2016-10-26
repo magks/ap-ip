@@ -1,0 +1,18 @@
+
+
+public static void main(String[] args) {
+
+    // Stack interpreter
+}
+
+static int add()
+{}
+
+static int sub()
+{}
+
+static int mult()
+{}
+
+static int divide()
+{}

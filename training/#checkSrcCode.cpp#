@@ -1,0 +1,41 @@
+#include <stack>
+#include <string>
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main(int argc, char* argv[] ) {
+
+  string fileName = argv[1];
+
+  stack<char> s;
+  bool moreCharsInFile, noErrors;
+  int leftParen, leftCurly, leftSquare, rightParen, rightCurly, rightSquare;
+  
+  //read file into stack by character
+  while ( moreCharsInFile ) {
+    s.push(char);
+  
+    // if left chars
+    if ( s.top() == '(' ) {
+      leftParen++;
+      s.pop();
+    }
+    else if ( s.top() == '[' ) {
+      leftSquare++;
+      s.pop();
+    }
+    else if ( s.top() == '{' ) {
+      leftCurly++;
+      s.pop();
+    }  
+    
+    if ( s.top() == ']' || s.top() == ')' || s.top() == '}' ) {
+      cout << "Illegal source code" << endl;
+    }
+  
+  }
+
+}
+
+
