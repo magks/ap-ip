@@ -16,5 +16,6 @@ vector<string> Solution::fizzBuzz(int A) {
         else
             v.push_back( to_string(i) );
     }
+	return v;
 }
 
